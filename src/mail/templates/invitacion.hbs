@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a {{ event }}</title>
+    <style>
+        /* Estilos para el banner */
+        .banner {
+            background-color: #FDE047;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Estilos para la imagen */
+        .banner img {
+            height: 100px;
+            margin-left: 20px; /* Ajusta el margen según lo necesites */
+        }
+
+        /* Estilos para el texto */
+        .banner p {
+            font-size: 24px; /* Tamaño del texto */
+            margin-left: 20px; /* Ajusta el margen según lo necesites */
+        }
+
+        /* Estilos para el contenido principal */
+        .content {
+            margin-top: 20px; /* Ajusta el margen según lo necesites */
+        }
+
+        .final-image {
+            margin-top: 20px; /* Margen superior para separar */
+            text-align: center; /* Centra la imagen */
+        }
+
+        .final-image img {
+            max-height: 200px; /* Tamaño máximo de la imagen */
+            max-width: 100%; /* Se ajusta al ancho máximo */
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner amarillo con imagen y texto -->
+    <div class="banner">
+        <img src="cid:unique-logo-id" alt="Logo"> <!-- Usa Content-ID para referenciar la imagen -->
+    </div>
+    <!-- Contenido principal de la invitación -->
+    <div class="content">
+        <h2>¡Invitación al {{ event }}!</h2>
+
+        <p>Estimado/a {{ invitado }},</p>
+
+        <p>El jugador {{ jugador }}  te a invitado a la partida {{ event }}:</p>
+
+        <ul>
+        <li><strong>Evento:</strong> {{ event }}</li>
+        <li><strong>Monto:</strong> {{ monto }}</li>
+        <li><strong>Participantes:</strong> {{ cant }}</li>
+        </ul>
+    </div>
+    <!-- Sección para la imagen final -->
+    <div class="final-image">
+        <img src="https://i.ibb.co/cY3nmWx/qr.png" alt="Imagen descriptiva">
+    </div>
+</body>
+</html>
+
+
+
+
